@@ -1,0 +1,39 @@
+- generic [ref=f1e3]:
+  - banner [ref=f1e6]:
+    - generic [ref=f1e9]:
+      - button "Deploy" [ref=f1e11] [cursor=pointer]
+      - button "Main menu" [ref=f1e15] [cursor=pointer]
+  - generic [ref=f1e19]:
+    - generic [ref=f1e21]:
+      - generic [ref=f1e23]:
+        - generic [ref=f1e30]:
+          - img "logo" [ref=f1e32]
+          - generic [ref=f1e33]:
+            - heading "현대제철 손익 분석 챗봇" [level=1] [ref=f1e35]:
+              - text: 현대제철 손익 분석 챗봇
+              - generic [ref=f1e36]:
+                - link "Link to heading":
+                  - /url: "#1bcbec69"
+            - paragraph [ref=f1e37]: Hyundai-Steel Margin Copilot · 매출량 가중평균 기반 FP&A 분석
+        - button [ref=f1e45] [cursor=pointer]:
+          - paragraph [ref=f1e49]: ⚙️
+      - generic [ref=f1e59]:
+        - heading "💡 추천 실무 분석 질문" [level=4] [ref=f1e65]:
+          - text: 💡 추천 실무 분석 질문
+          - generic [ref=f1e66]:
+            - link "Link to heading":
+              - /url: "#d73f0631"
+        - paragraph [ref=f1e71]: 클릭하면 바로 질의가 실행됩니다.
+        - button [ref=f1e74] [cursor=pointer]:
+          - paragraph [ref=f1e78]: 📅 월별 손익 요약
+        - button [ref=f1e81] [cursor=pointer]:
+          - paragraph [ref=f1e85]: 📉 MoM 스프레드 갭
+        - button [ref=f1e88] [cursor=pointer]:
+          - paragraph [ref=f1e92]: 🚗 자동차용 마진 현황
+        - button [ref=f1e95] [cursor=pointer]:
+          - paragraph [ref=f1e99]: 🏭 상반기 공장별 비교
+        - button [ref=f1e102] [cursor=pointer]:
+          - paragraph [ref=f1e106]: ⚠️ 적자 품목 탐색
+    - generic [ref=f1e114]:
+      - textbox "현대제철 손익 지표나 분석하고 싶은 내용을 질문하세요..." [ref=f1e118]
+      - button "Send message" [disabled] [ref=f1e120]

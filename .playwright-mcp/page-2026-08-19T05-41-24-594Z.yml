@@ -1,0 +1,46 @@
+- generic [ref=e3]:
+  - banner [ref=e6]:
+    - generic [ref=e9]:
+      - generic [ref=e113]:
+        - img "Running..." [ref=e114]
+        - button "Stop" [ref=e119] [cursor=pointer]
+      - button "Deploy" [ref=e11] [cursor=pointer]
+      - button "Main menu" [ref=e15] [cursor=pointer]
+  - generic [ref=e19]:
+    - generic [ref=e24]:
+      - img "logo" [ref=e26]
+      - generic [ref=e27]:
+        - heading "현대제철 손익 분석 챗봇" [level=1] [ref=e29]:
+          - text: 현대제철 손익 분석 챗봇
+          - generic [ref=e30]:
+            - link "Link to heading":
+              - /url: "#1bcbec69"
+        - paragraph [ref=e31]: Hyundai-Steel Margin Copilot · 매출량 가중평균 기반 FP&A 분석
+    - generic [ref=e33]:
+      - generic [ref=e37]:
+        - generic [ref=e41]:
+          - 'textbox "질문을 입력하세요 (예: 3월 품목별 스프레드 및 손익 실적 요약해줘)" [ref=e45]'
+          - button "Send message" [disabled] [ref=e47]
+        - generic [ref=e120]: 상반기 분기별(Q1 vs Q2) 봉형강 공장별 영업이익 비교해줘
+      - generic [ref=e54]:
+        - heading "💡 추천 실무 분석 질문" [level=4] [ref=e60]:
+          - text: 💡 추천 실무 분석 질문
+          - generic [ref=e61]:
+            - link "Link to heading":
+              - /url: "#d73f0631"
+        - paragraph [ref=e66]: 클릭하면 바로 질의가 실행됩니다.
+        - button [ref=e69] [cursor=pointer]:
+          - paragraph [ref=e73]: 📅 월별 손익 요약
+        - button [ref=e76] [cursor=pointer]:
+          - paragraph [ref=e80]: 📉 MoM 스프레드 갭
+        - button [ref=e83] [cursor=pointer]:
+          - paragraph [ref=e87]: 🚗 자동차용 마진 현황
+        - button [active] [ref=e90] [cursor=pointer]:
+          - paragraph [ref=e94]: 🏭 상반기 공장별 비교
+        - button [ref=e97] [cursor=pointer]:
+          - paragraph [ref=e101]: ⚠️ 적자 품목 탐색
+    - group [ref=e104]:
+      - generic "keyboard_arrow_right ⚙️ 시스템 설정 및 DB 상태" [ref=e105] [cursor=pointer]:
+        - generic [ref=e106]:
+          - generic [ref=e107]: keyboard_arrow_right
+          - paragraph [ref=e111]: ⚙️ 시스템 설정 및 DB 상태

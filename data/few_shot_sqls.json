@@ -1,0 +1,42 @@
+[
+  {
+    "question": "3월 품목별 스프레드 및 손익 실적 요약해줘.",
+    "sql": "SELECT profit_center, SUM(sales_vol) AS total_vol, ROUND(SUM(sales_amt)/SUM(sales_vol)) AS avg_price, ROUND(SUM(sales_amt)/SUM(sales_vol) - SUM(raw_material*sales_vol)/SUM(sales_vol)) AS avg_spread, SUM(op_profit) AS total_op_profit, ROUND((SUM(op_profit)*1.0/SUM(sales_amt))*100, 2) AS op_margin FROM profit_center_master WHERE year_month = '2026-03' GROUP BY profit_center ORDER BY total_op_profit DESC;"
+  },
+  {
+    "question": "5월 전월(4월) 대비 스프레드가 가장 많이 하락한 품목이 뭐야?",
+    "sql": "WITH monthly_spread AS (SELECT year_month, profit_center, ROUND(SUM(sales_amt)/SUM(sales_vol) - SUM(raw_material*sales_vol)/SUM(sales_vol)) AS spread FROM profit_center_master WHERE year_month IN ('2026-04', '2026-05') GROUP BY year_month, profit_center) SELECT m5.profit_center, m4.spread AS apr_spread, m5.spread AS may_spread, (m5.spread - m4.spread) AS spread_diff FROM (SELECT * FROM monthly_spread WHERE year_month = '2026-05') m5 JOIN (SELECT * FROM monthly_spread WHERE year_month = '2026-04') m4 ON m5.profit_center = m4.profit_center ORDER BY spread_diff ASC;"
+  },
+  {
+    "question": "8월 자동차용 스프레드는 얼마정도야?",
+    "sql": "SELECT sub_division_2 AS client_group, profit_center, SUM(sales_vol) AS total_vol, ROUND(SUM(sales_amt)/SUM(sales_vol)) AS avg_price, ROUND(SUM(sales_amt)/SUM(sales_vol) - SUM(raw_material*sales_vol)/SUM(sales_vol)) AS avg_spread, SUM(op_profit) AS op_profit FROM profit_center_master WHERE year_month = '2026-08' AND sub_division_3 = '자동차용' GROUP BY sub_division_2, profit_center;"
+  },
+  {
+    "question": "상반기 분기별(Q1 vs Q2) 봉형강 공장별 영업이익 비교해줘.",
+    "sql": "SELECT quarter, plant, SUM(sales_vol) AS total_vol, SUM(op_profit) AS total_op_profit, ROUND((SUM(op_profit)*1.0/SUM(sales_amt))*100, 2) AS op_margin FROM profit_center_master WHERE division = '봉형강' AND quarter IN ('Q1', 'Q2') GROUP BY quarter, plant ORDER BY plant, quarter;"
+  },
+  {
+    "question": "1분기 대비 2분기 스프레드가 제일 크게 오른 품목은 뭐야?",
+    "sql": "WITH quarterly_spread AS (SELECT quarter, profit_center, ROUND(SUM(sales_amt)/SUM(sales_vol) - SUM(raw_material*sales_vol)/SUM(sales_vol)) AS spread FROM profit_center_master WHERE year = 2026 AND quarter IN ('Q1', 'Q2') GROUP BY quarter, profit_center) SELECT q2.profit_center, q1.spread AS q1_spread, q2.spread AS q2_spread, (q2.spread - q1.spread) AS spread_diff FROM (SELECT * FROM quarterly_spread WHERE quarter = 'Q2') q2 JOIN (SELECT * FROM quarterly_spread WHERE quarter = 'Q1') q1 ON q2.profit_center = q1.profit_center ORDER BY spread_diff DESC;"
+  },
+  {
+    "question": "상반기(1~6월) 누적 기준 가장 많은 영업이익을 낸 손익센터와 이익률은?",
+    "sql": "SELECT profit_center, SUM(sales_vol) AS total_vol, SUM(op_profit) AS total_op_profit, ROUND((SUM(op_profit)*1.0/SUM(sales_amt))*100, 2) AS op_margin FROM profit_center_master WHERE year_month BETWEEN '2026-01' AND '2026-06' GROUP BY profit_center ORDER BY total_op_profit DESC;"
+  },
+  {
+    "question": "당진공장과 순천공장의 냉연 스프레드 차이가 몇 원/톤이야?",
+    "sql": "WITH plant_spread AS (SELECT plant, ROUND(SUM(sales_amt)/SUM(sales_vol) - SUM(raw_material*sales_vol)/SUM(sales_vol)) AS spread FROM profit_center_master WHERE profit_center = '냉연' AND plant IN ('당진', '순천') GROUP BY plant) SELECT p1.spread AS dangjin_spread, p2.spread AS suncheon_spread, (p1.spread - p2.spread) AS spread_gap FROM (SELECT * FROM plant_spread WHERE plant = '당진') p1 JOIN (SELECT * FROM plant_spread WHERE plant = '순천') p2 ON 1=1;"
+  },
+  {
+    "question": "3분기(Q3) 열연 전체 판매량 중 자동차용 비중과 스프레드는?",
+    "sql": "SELECT profit_center, SUM(sales_vol) AS total_vol, SUM(CASE WHEN sub_division_3 = '자동차용' THEN sales_vol ELSE 0 END) AS auto_vol, ROUND(SUM(CASE WHEN sub_division_3 = '자동차용' THEN sales_vol ELSE 0 END) * 100.0 / SUM(sales_vol), 2) AS auto_vol_ratio, ROUND(SUM(CASE WHEN sub_division_3 = '자동차용' THEN sales_amt ELSE 0 END) / SUM(CASE WHEN sub_division_3 = '자동차용' THEN sales_vol ELSE 0 END) - SUM(CASE WHEN sub_division_3 = '자동차용' THEN raw_material*sales_vol ELSE 0 END) / SUM(CASE WHEN sub_division_3 = '자동차용' THEN sales_vol ELSE 0 END)) AS auto_spread FROM profit_center_master WHERE quarter = 'Q3' AND profit_center = '열연' GROUP BY profit_center;"
+  },
+  {
+    "question": "월별 영업이익 적자가 난 품목과 해당 월 목록 뽑아줘.",
+    "sql": "SELECT year_month, profit_center, SUM(op_profit) AS total_op_profit FROM profit_center_master GROUP BY year_month, profit_center HAVING SUM(op_profit) < 0 ORDER BY year_month, total_op_profit ASC;"
+  },
+  {
+    "question": "2분기(Q2) 판재와 봉형강의 매출액 비중과 가중평균 스프레드 비교해줘.",
+    "sql": "WITH division_agg AS (SELECT division, SUM(sales_amt) AS total_sales_amt, SUM(sales_vol) AS total_vol, ROUND(SUM(sales_amt)/SUM(sales_vol) - SUM(raw_material*sales_vol)/SUM(sales_vol)) AS avg_spread FROM profit_center_master WHERE quarter = 'Q2' GROUP BY division) SELECT division, total_sales_amt, ROUND(total_sales_amt * 100.0 / SUM(total_sales_amt) OVER (), 2) AS sales_amt_ratio, avg_spread FROM division_agg ORDER BY total_sales_amt DESC;"
+  }
+]

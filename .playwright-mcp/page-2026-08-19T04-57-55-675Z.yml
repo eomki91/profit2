@@ -1,0 +1,293 @@
+- generic [ref=e3]:
+  - banner [ref=e6]:
+    - generic [ref=e9]:
+      - button "Deploy" [ref=e11] [cursor=pointer]
+      - button "Main menu" [ref=e15] [cursor=pointer]
+  - generic [ref=e19]:
+    - generic [ref=e24]:
+      - img "logo" [ref=e25]
+      - generic [ref=e26]:
+        - heading "현대제철 손익 분석 챗봇" [level=1] [ref=e28]:
+          - text: 현대제철 손익 분석 챗봇
+          - generic [ref=e29]:
+            - link "Link to heading":
+              - /url: "#1bcbec69"
+        - paragraph [ref=e30]: Hyundai-Steel Margin Copilot · 매출량 가중평균 기반 FP&A 분석
+    - generic [ref=e32]:
+      - generic [ref=e36]:
+        - generic [ref=e432]: 3월 품목별 스프레드 및 손익 실적 요약해줘
+        - generic [ref=e223]:
+          - generic [ref=e224]: 🤖
+          - generic [ref=e438]:
+            - text: 📌 핵심 결론
+            - paragraph [ref=e439]:
+              - text: 3월 영업이익 1위 품목은
+              - strong [ref=e440]: 열연
+              - text: 으로
+              - strong [ref=e441]: 280억 9,782만 원
+              - text: ", 영업이익률 **5.81%**를 기록했습니다. 열연은 평균 스프레드가"
+              - strong [ref=e442]: 269,152원
+              - text: 으로 냉연·H형강·특수강보다 낮았지만, 판매량
+              - strong [ref=e443]: 536,850
+              - text: 으로 전체 품목 중 가장 커 영업이익 규모가 가장 높았습니다. 다만 전월 또는 전년 동월 데이터가 없어
+              - strong [ref=e444]: 증감액·증감률은 산출할 수 없습니다
+              - text: .
+            - paragraph [ref=e445]: 💡 손익 요인 분석
+            - list [ref=e446]:
+              - listitem [ref=e447]:
+                - text: 평균 스프레드는
+                - strong [ref=e448]: 특수강 466,000원
+                - text: 으로 가장 높았고, 이어
+                - strong [ref=e449]: 냉연 353,316원
+                - text: ","
+                - strong [ref=e450]: H형강 316,820원
+                - text: ","
+                - strong [ref=e451]: 열연 269,152원
+                - text: ","
+                - strong [ref=e452]: 철근 265,641원
+                - text: ","
+                - strong [ref=e453]: 후판 259,263원
+                - text: 순입니다.
+              - listitem [ref=e454]:
+                - text: 평균 판매단가는
+                - strong [ref=e455]: 특수강 1,168,000원
+                - text: 이 가장 높았으며,
+                - strong [ref=e456]: 냉연 1,059,616원
+                - text: ","
+                - strong [ref=e457]: 후판 957,497원
+                - text: ","
+                - strong [ref=e458]: H형강 919,180원
+                - text: ","
+                - strong [ref=e459]: 열연 901,521원
+                - text: ","
+                - strong [ref=e460]: 철근 816,281원
+                - text: 순입니다.
+              - listitem [ref=e461]:
+                - text: 특수강은 평균 스프레드
+                - strong [ref=e462]: 466,000원
+                - text: 으로 가장 높지만 판매량이
+                - strong [ref=e463]: 51,470
+                - text: 에 그쳐 영업이익은
+                - strong [ref=e464]: 1억 294만 원
+                - text: ", 영업이익률은 **0.17%**에 머물렀습니다."
+              - listitem [ref=e465]:
+                - text: 반면 열연은 평균 스프레드가
+                - strong [ref=e466]: 269,152원
+                - text: 으로 높지 않지만 판매량이
+                - strong [ref=e467]: 536,850
+                - text: 으로 가장 커 영업이익
+                - strong [ref=e468]: 280억 9,782만 원
+                - text: 을 기록했습니다. 냉연도 평균 스프레드
+                - strong [ref=e469]: 353,316원
+                - text: ", 판매량"
+                - strong [ref=e470]: 433,620
+                - text: 을 바탕으로 영업이익
+                - strong [ref=e471]: 233억 524만 원
+                - text: 을 달성했습니다.
+              - listitem [ref=e472]:
+                - text: 제공된 데이터에는 3월 단일 시점의 판매단가와 평균 스프레드는 있으나, 기간별 판가 변동 및 원부재료비 변동이 제시되어 있지 않습니다. 따라서
+                - strong [ref=e473]: 판가 변동과 원가 변동 중 어느 쪽이 스프레드 변화를 주도했는지는 판단할 수 없으며, 요인 분석이 제한적입니다
+                - text: .
+            - paragraph [ref=e474]: ⚠️ 주의 필요 세그먼트
+            - list [ref=e475]:
+              - listitem [ref=e476]:
+                - strong [ref=e477]: 후판
+                - text: 은 영업이익
+                - strong [ref=e478]: "-39억 6,565만 원"
+                - text: ", 영업이익률 **-2.25%**로 전체 품목 중 영업손실과 영업이익률이 가장 낮습니다. 평균 스프레드는"
+                - strong [ref=e479]: 259,263원
+                - text: 입니다.
+              - listitem [ref=e480]:
+                - strong [ref=e481]: 철근
+                - text: 도 영업이익
+                - strong [ref=e482]: "-12억 1,942만 원"
+                - text: ", 영업이익률 **-0.56%**로 적자를 기록했습니다. 평균 스프레드는"
+                - strong [ref=e483]: 265,641원
+                - text: 입니다.
+              - listitem [ref=e484]:
+                - strong [ref=e485]: 특수강
+                - text: 은 영업이익이
+                - strong [ref=e486]: 1억 294만 원
+                - text: 으로 흑자이나, 영업이익률이 **0.17%**에 불과해 수익성 관리가 필요합니다.
+              - listitem [ref=e487]: 비교 기간이 없어 스프레드의 급락 여부는 확인할 수 없습니다.
+        - generic [ref=e495]:
+          - paragraph [ref=e500]:
+            - text: 📋
+            - strong [ref=e501]: 집계 데이터
+          - generic [ref=e506]:
+            - button "Show/hide columns" [ref=e510] [cursor=pointer]
+            - button "Download as CSV" [ref=e516] [cursor=pointer]
+            - button "Search" [ref=e522] [cursor=pointer]
+            - button "Fullscreen" [ref=e528] [cursor=pointer]
+          - paragraph [ref=e544]:
+            - text: 📊
+            - strong [ref=e545]: 시각화
+          - generic [ref=e551]:
+            - img:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: 28G
+                        - generic: 23G
+                        - generic: 4.8G
+                        - generic: 100M
+                        - generic: "-1.2G"
+                        - generic: "-4.0G"
+                  - generic:
+                    - generic: 열연
+                    - generic: 냉연
+                    - generic: H형강
+                    - generic: 특수강
+                    - generic: 철근
+                    - generic: 후판
+                  - generic:
+                    - generic: "0"
+                    - generic: 10B
+                    - generic: 20B
+            - img:
+              - generic:
+                - generic: profit_center별 total_op_profit 비교
+                - generic: profit_center
+                - generic: total_op_profit
+            - toolbar [ref=e565]:
+              - button "Download plot as a PNG" [ref=e567] [cursor=pointer]
+              - generic [ref=e570]:
+                - button "Zoom" [ref=e571] [cursor=pointer]
+                - button "Pan" [ref=e574] [cursor=pointer]
+              - generic [ref=e577]:
+                - button "Zoom in" [ref=e578] [cursor=pointer]
+                - button "Zoom out" [ref=e581] [cursor=pointer]
+                - button "Autoscale" [ref=e584] [cursor=pointer]
+                - button "Reset axes" [ref=e587] [cursor=pointer]
+              - button "Fullscreen" [ref=e591] [cursor=pointer]
+          - group [ref=e596]:
+            - generic "keyboard_arrow_right 🔍 생성된 DuckDB SQL 보기" [ref=e597] [cursor=pointer]:
+              - generic [ref=e598]:
+                - generic [ref=e599]: keyboard_arrow_right
+                - paragraph [ref=e603]: 🔍 생성된 DuckDB SQL 보기
+        - generic [ref=e607]:
+          - 'textbox "질문을 입력하세요 (예: 3월 품목별 스프레드 및 손익 실적 요약해줘)" [ref=e611]'
+          - button "Send message" [disabled] [ref=e613]
+        - generic [ref=e242]: 5월 전월 대비 스프레드 최대 하락 품목은?
+        - group [ref=e618]:
+          - generic "check SQL 생성 완료" [ref=e627] [cursor=pointer]:
+            - generic [ref=e620]:
+              - generic [ref=e628]: check
+              - paragraph [ref=e625]: SQL 생성 완료
+        - generic [ref=e633]:
+          - generic [ref=e634]:
+            - generic [ref=e635]: 🤖
+            - generic [ref=e636]:
+              - text: 📌 핵심 결론
+              - paragraph [ref=e637]:
+                - text: 5월 전월 대비 스프레드 최대 하락 품목은
+                - strong [ref=e638]: H형강
+                - text: 입니다. 스프레드는 4월
+                - strong [ref=e639]: 319,828.69원
+                - text: 에서 5월
+                - strong [ref=e640]: 316,185.67원
+                - text: 으로
+                - strong [ref=e641]: 3,643.01원 감소
+                - text: 했으며, 감소율은 약 **1.14%**입니다.
+              - paragraph [ref=e642]: 💡 손익 요인 분석
+              - paragraph [ref=e643]:
+                - text: 제공된 데이터에는 판가와 원가의 월별 변동을 분해할 수 있는 정보가 없어 요인 분석이 제한적입니다. 다만 H형강의 스프레드 자체는 전월 대비
+                - strong [ref=e644]: 3,643.01원 감소
+                - text: 했습니다.
+              - paragraph [ref=e645]: ⚠️ 주의 필요 세그먼트
+              - paragraph [ref=e646]:
+                - strong [ref=e647]: H형강
+                - text: 은 조회 결과 중 스프레드 하락 폭이 가장 큰 세그먼트입니다. 4월
+                - strong [ref=e648]: 319,828.69원
+                - text: 에서 5월
+                - strong [ref=e649]: 316,185.67원
+                - text: 으로
+                - strong [ref=e650]: 3,643.01원 감소
+                - text: 했으므로 마진 수준의 하락 추이에 주의가 필요합니다.
+          - paragraph
+        - generic [ref=e658]:
+          - paragraph [ref=e663]:
+            - text: 📋
+            - strong [ref=e664]: 집계 데이터
+          - generic [ref=e669]:
+            - button "Show/hide columns" [ref=e673] [cursor=pointer]
+            - button "Download as CSV" [ref=e679] [cursor=pointer]
+            - button "Search" [ref=e685] [cursor=pointer]
+            - button "Fullscreen" [ref=e691] [cursor=pointer]
+          - group [ref=e705]:
+            - generic "keyboard_arrow_right 🔍 생성된 DuckDB SQL 보기" [ref=e706] [cursor=pointer]:
+              - generic [ref=e707]:
+                - generic [ref=e708]: keyboard_arrow_right
+                - paragraph [ref=e712]: 🔍 생성된 DuckDB SQL 보기
+      - generic [ref=e53]:
+        - heading "💡 추천 실무 분석 질문" [level=4] [ref=e59]:
+          - text: 💡 추천 실무 분석 질문
+          - generic [ref=e60]:
+            - link "Link to heading":
+              - /url: "#d73f0631"
+        - paragraph [ref=e65]: 클릭하면 바로 질의가 실행됩니다.
+        - button [ref=e68] [cursor=pointer]:
+          - paragraph [ref=e72]: 📅 월별 손익 요약
+        - button [active] [ref=e75] [cursor=pointer]:
+          - paragraph [ref=e79]: 📉 MoM 스프레드 갭
+        - button [ref=e82] [cursor=pointer]:
+          - paragraph [ref=e86]: 🚗 자동차용 마진 현황
+        - button [ref=e89] [cursor=pointer]:
+          - paragraph [ref=e93]: 🏭 상반기 공장별 비교
+        - button [ref=e96] [cursor=pointer]:
+          - paragraph [ref=e100]: ⚠️ 적자 품목 탐색
+    - group [ref=e103]:
+      - generic "keyboard_arrow_down ⚙️ 시스템 설정 및 DB 상태" [ref=e421] [cursor=pointer]:
+        - generic [ref=e105]:
+          - generic [ref=e422]: keyboard_arrow_down
+          - paragraph [ref=e110]: ⚙️ 시스템 설정 및 DB 상태
+      - generic [ref=e114]:
+        - generic [ref=e116]:
+          - paragraph [ref=e121]:
+            - strong [ref=e122]: 🤖 LLM 엔진 설정
+          - generic [ref=e124]:
+            - paragraph [ref=e128]: 사용할 LLM 엔진을 선택하세요
+            - radiogroup "사용할 LLM 엔진을 선택하세요" [ref=e129] [cursor=pointer]:
+              - generic [ref=e130]:
+                - radio "🏠 로컬 LLM (Ollama)"
+                - paragraph [ref=e135]: 🏠 로컬 LLM (Ollama)
+              - generic [ref=e136]:
+                - radio "🌐 OpenAI (ChatGPT)" [checked]
+                - paragraph [ref=e141]: 🌐 OpenAI (ChatGPT)
+          - generic [ref=e143]:
+            - generic [ref=e144]:
+              - paragraph [ref=e147]: OpenAI API Key
+              - button "Help for OpenAI API Key" [ref=e151] [cursor=pointer]
+            - generic [ref=e156]:
+              - textbox "OpenAI API Key" [ref=e157]:
+                - /placeholder: ""
+                - text: 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
+              - button "Show password text" [ref=e158] [cursor=pointer]:
+                - img "Show password text" [ref=e159]
+          - generic [ref=e163]:
+            - generic [ref=e164]:
+              - paragraph [ref=e167]: Temperature
+              - button "Help for Temperature" [ref=e171] [cursor=pointer]
+            - generic [ref=e175]:
+              - slider "Temperature" [ref=e179]:
+                - generic:
+                  - generic:
+                    - paragraph: "0.00"
+              - generic:
+                - generic:
+                  - paragraph: "0.00"
+                - generic:
+                  - paragraph: "0.70"
+          - status [ref=e183]:
+            - paragraph [ref=e187]:
+              - strong [ref=e188]: 현재 활성 엔진
+              - text: ": 🟢 OpenAI (gpt-5.6-luna)"
+        - generic [ref=e190]:
+          - paragraph [ref=e195]:
+            - strong [ref=e196]: 🗄️ DB 상태 (In-Memory DuckDB)
+          - generic [ref=e199]:
+            - paragraph [ref=e202]: 총 레코드 수
+            - paragraph [ref=e205]: 288 건
+          - paragraph [ref=e210]: "분석 가능 기간: 2026-01 ~ 2026-12"

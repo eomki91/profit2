@@ -1,0 +1,280 @@
+- generic [ref=f1e2]:
+  - generic [ref=f1e11]:
+    - heading "📊 Hyundai-Steel Margin Copilot" [level=2] [ref=f1e16]
+    - paragraph [ref=f1e21]: 현대제철 손익 분석 챗봇
+    - separator [ref=f1e26]
+    - heading "🤖 LLM 엔진 설정" [level=3] [ref=f1e31]
+    - generic [ref=f1e33]:
+      - paragraph [ref=f1e37]: 사용할 LLM 엔진을 선택하세요
+      - radiogroup "사용할 LLM 엔진을 선택하세요" [ref=f1e38] [cursor=pointer]:
+        - generic [ref=f1e39]:
+          - radio "🏠 로컬 LLM (Ollama / qwen2.5-coder 또는 gemma2)" [checked]
+          - paragraph [ref=f1e44]: 🏠 로컬 LLM (Ollama / qwen2.5-coder 또는 gemma2)
+        - generic [ref=f1e45]:
+          - radio "🌐 OpenAI (ChatGPT / gpt-5.6-luna)"
+          - paragraph [ref=f1e50]: 🌐 OpenAI (ChatGPT / gpt-5.6-luna)
+    - generic [ref=f1e72]:
+      - generic [ref=f1e73]:
+        - paragraph [ref=f1e76]: Temperature
+        - button "Help for Temperature" [ref=f1e80] [cursor=pointer]
+      - generic [ref=f1e84]:
+        - slider "Temperature" [ref=f1e88]:
+          - generic:
+            - generic:
+              - paragraph: "0.00"
+        - generic:
+          - generic:
+            - paragraph: "0.00"
+          - generic:
+            - paragraph: "0.70"
+    - status [ref=f1e219]:
+      - paragraph [ref=f1e223]:
+        - strong [ref=f1e224]: 현재 활성 엔진
+        - text: ": 🟡 Local Ollama (qwen2.5-coder:7b)"
+    - separator [ref=f1e228]
+    - heading "🗄️ DB 상태" [level=3] [ref=f1e229]
+    - generic [ref=f1e231]:
+      - paragraph [ref=f1e234]: 총 레코드 수
+      - paragraph [ref=f1e237]: 288 건
+    - paragraph [ref=f1e241]: "분석 가능 기간: 2026-01 ~ 2026-12"
+    - separator [ref=f1e242]
+    - heading "💡 추천 질문" [level=3] [ref=f1e243]
+    - button [ref=f1e184] [cursor=pointer]:
+      - paragraph [ref=f1e188]: 3월 품목별 스프레드 및 손익 실적 요약해줘
+    - button [ref=f1e190] [cursor=pointer]:
+      - paragraph [ref=f1e194]: 5월 전월 대비 스프레드 최대 하락 품목은?
+    - button [ref=f1e196] [cursor=pointer]:
+      - paragraph [ref=f1e200]: 8월 자동차용(HMG/글로벌) 스프레드 현황 알려줘
+  - generic [ref=f1e3]:
+    - banner [ref=f1e133]:
+      - generic [ref=f1e136]:
+        - generic [ref=f1e1048]:
+          - img "Running..." [ref=f1e1049]
+          - button "Stop" [ref=f1e1054] [cursor=pointer]
+        - button "Deploy" [ref=f1e1056] [cursor=pointer]
+        - button "Main menu" [ref=f1e150] [cursor=pointer]
+    - generic [ref=f1e154]:
+      - generic [ref=f1e156]:
+        - heading "철강 손익 분석 챗봇" [level=1] [ref=f1e161]:
+          - text: 철강 손익 분석 챗봇
+          - generic [ref=f1e162]:
+            - link "Link to heading":
+              - /url: "#75197733"
+        - paragraph [ref=f1e167]: 단가/스프레드는 항상 매출량 가중평균으로 계산됩니다. LLM 엔진은 사이드바에서 로컬/OpenAI를 선택할 수 있습니다.
+        - generic [ref=f1e253]:
+          - generic [ref=f1e254]: face
+          - generic "Chat message from user" [ref=f1e257]:
+            - paragraph [ref=f1e263]: 월별 영업이익 적자가 난 품목과 해당 월 목록 뽑아줘
+        - generic [ref=f1e265]:
+          - generic [ref=f1e266]: smart_toy
+          - generic "Chat message from assistant" [ref=f1e269]:
+            - generic [ref=f1e270]:
+              - heading "💡 FP&A 분석 브리핑" [level=3] [ref=f1e477]:
+                - text: 💡 FP&A 분석 브리핑
+                - generic [ref=f1e478]:
+                  - link "Link to heading":
+                    - /url: "#fp-and-a"
+              - generic [ref=f1e292]:
+                - paragraph [ref=f1e479]: 📌 핵심 결론 2026년 6월에 철근 세그먼트의 영업이익이 가장 크게 감소했으며, 109억원의 손실이 발생했습니다. 이는 전체 영업이익 감소의 주요 원인 중 하나입니다.
+                - paragraph [ref=f1e480]: 💡 손익 요인 분석 제공된 데이터에는 판가/원가 분해 정보가 없어 요인 분석이 제한적입니다.
+                - paragraph [ref=f1e481]: ⚠️ 주의 필요 세그먼트 2026년 6월 철근 세그먼트의 영업이익이 가장 크게 감소했으며, 109억원의 손실이 발생했습니다. 이는 전체 영업이익 감소의 주요 원인 중 하나입니다.
+              - paragraph [ref=f1e303]:
+                - text: 📋
+                - strong [ref=f1e482]: 실적 집계 데이터
+              - generic [ref=f1e486]:
+                - button "Show/hide columns" [ref=f1e490] [cursor=pointer]
+                - button "Download as CSV" [ref=f1e496] [cursor=pointer]
+                - button "Search" [ref=f1e502] [cursor=pointer]
+                - button "Fullscreen" [ref=f1e508] [cursor=pointer]
+              - paragraph [ref=f1e523]:
+                - text: 📈
+                - strong [ref=f1e524]: 시각화
+              - generic [ref=f1e363]:
+                - img:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "-2.6G"
+                                - generic: "-2.9G"
+                                - generic: "-4.0G"
+                                - generic: "-4.3G"
+                                - generic: "-2.8G"
+                                - generic: "-6.9G"
+                                - generic: "-6.0G"
+                                - generic: "-4.0G"
+                                - generic: "-4.5G"
+                            - generic:
+                              - generic:
+                                - generic: "-940M"
+                                - generic: "-560M"
+                                - generic: "-950M"
+                                - generic: "-1.9G"
+                                - generic: "-1.5G"
+                            - generic:
+                              - generic:
+                                - generic: "-1.2G"
+                                - generic: "-2.0G"
+                                - generic: "-900M"
+                                - generic: "-11G"
+                                - generic: "-5.8G"
+                                - generic: "-4.5G"
+                      - generic:
+                        - generic: Jan 2026
+                        - generic: Feb 2026
+                        - generic: Mar 2026
+                        - generic: Apr 2026
+                        - generic: May 2026
+                        - generic: Jun 2026
+                        - generic: Jul 2026
+                        - generic: Aug 2026
+                        - generic: Sep 2026
+                      - generic:
+                        - generic: −10B
+                        - generic: −8B
+                        - generic: −6B
+                        - generic: −4B
+                        - generic: −2B
+                        - generic: "0"
+                - img:
+                  - generic:
+                    - generic [ref=f1e379]:
+                      - generic [ref=f1e380]: profit_center
+                      - generic [ref=f1e382]:
+                        - generic [ref=f1e383]: 후판
+                        - generic [ref=f1e388] [cursor=pointer]
+                      - generic [ref=f1e390]:
+                        - generic [ref=f1e391]: 특수강
+                        - generic [ref=f1e396] [cursor=pointer]
+                      - generic [ref=f1e398]:
+                        - generic [ref=f1e399]: 철근
+                        - generic [ref=f1e404] [cursor=pointer]
+                    - generic: year_month x profit_center별 total_op_profit 비교
+                    - generic: year_month
+                    - generic: total_op_profit
+                - toolbar [ref=f1e405]:
+                  - button "Download plot as a PNG" [ref=f1e407] [cursor=pointer]
+                  - generic [ref=f1e410]:
+                    - button "Zoom" [ref=f1e411] [cursor=pointer]
+                    - button "Pan" [ref=f1e414] [cursor=pointer]
+                  - generic [ref=f1e417]:
+                    - button "Zoom in" [ref=f1e418] [cursor=pointer]
+                    - button "Zoom out" [ref=f1e421] [cursor=pointer]
+                    - button "Autoscale" [ref=f1e424] [cursor=pointer]
+                    - button "Reset axes" [ref=f1e427] [cursor=pointer]
+                  - button "Fullscreen" [ref=f1e431] [cursor=pointer]
+              - group [ref=f1e527]:
+                - generic "keyboard_arrow_right 🔍 생성된 SQL 쿼리 보기" [ref=f1e528] [cursor=pointer]:
+                  - generic [ref=f1e529]:
+                    - generic [ref=f1e530]: keyboard_arrow_right
+                    - paragraph [ref=f1e534]: 🔍 생성된 SQL 쿼리 보기
+        - generic [ref=f1e536]:
+          - generic [ref=f1e537]: face
+          - generic "Chat message from user" [ref=f1e540]:
+            - paragraph [ref=f1e546]: 당진이랑 순천 냉연 스프레드가 얼마나 차이나?
+        - generic [ref=f1e548]:
+          - generic [ref=f1e549]: smart_toy
+          - generic "Chat message from assistant" [ref=f1e552]:
+            - generic [ref=f1e553]:
+              - heading "💡 FP&A 분석 브리핑" [level=3] [ref=f1e667]:
+                - text: 💡 FP&A 분석 브리핑
+                - generic [ref=f1e668]:
+                  - link "Link to heading":
+                    - /url: "#fp-and-a"
+              - generic [ref=f1e571]:
+                - paragraph [ref=f1e669]: 📌 핵심 결론 당진과 순천의 냉연 스프레드 차이는 1,493원으로 나타났습니다. 당진의 스프레드가 순천보다 높은 편입니다.
+                - paragraph [ref=f1e670]: 💡 손익 요인 분석 제공된 데이터에는 판가/원가 분해 정보가 없어 요인 분석이 제한적입니다.
+                - paragraph [ref=f1e671]: ⚠️ 주의 필요 세그먼트 특이 적자 구간 없음
+              - paragraph [ref=f1e579]:
+                - text: 📋
+                - strong [ref=f1e672]: 실적 집계 데이터
+              - generic [ref=f1e676]:
+                - button "Show/hide columns" [ref=f1e680] [cursor=pointer]
+                - button "Download as CSV" [ref=f1e686] [cursor=pointer]
+                - button "Search" [ref=f1e692] [cursor=pointer]
+                - button "Fullscreen" [ref=f1e698] [cursor=pointer]
+              - group [ref=f1e712]:
+                - generic "keyboard_arrow_right 🔍 생성된 SQL 쿼리 보기" [ref=f1e713] [cursor=pointer]:
+                  - generic [ref=f1e714]:
+                    - generic [ref=f1e715]: keyboard_arrow_right
+                    - paragraph [ref=f1e719]: 🔍 생성된 SQL 쿼리 보기
+        - generic [ref=f1e721]:
+          - generic [ref=f1e722]: face
+          - generic "Chat message from user" [ref=f1e725]:
+            - paragraph [ref=f1e731]: 3분기에 열연 중에 자동차용이 차지하는 비중이 얼마나 돼?
+        - generic [ref=f1e733]:
+          - generic [ref=f1e734]: smart_toy
+          - generic "Chat message from assistant" [ref=f1e737]:
+            - generic [ref=f1e738]:
+              - heading "💡 FP&A 분석 브리핑" [level=3] [ref=f1e852]:
+                - text: 💡 FP&A 분석 브리핑
+                - generic [ref=f1e853]:
+                  - link "Link to heading":
+                    - /url: "#fp-and-a"
+              - generic [ref=f1e756]:
+                - paragraph [ref=f1e854]: 📌 핵심 결론 3분기 열연 중 자동차용이 차지하는 비중은 59.78%로, 전체 판매량의 60%를 차지하고 있습니다. 이는 지난 분기 대비 2.34% 증가한 것으로 보입니다.
+                - paragraph [ref=f1e855]: 💡 손익 요인 분석 제공된 데이터에는 판가/원가 분해 정보가 없어 요인 분석이 제한적입니다.
+                - paragraph [ref=f1e856]: ⚠️ 주의 필요 세그먼트 특이 적자 구간 없음
+              - paragraph [ref=f1e764]:
+                - text: 📋
+                - strong [ref=f1e857]: 실적 집계 데이터
+              - generic [ref=f1e861]:
+                - button "Show/hide columns" [ref=f1e865] [cursor=pointer]
+                - button "Download as CSV" [ref=f1e871] [cursor=pointer]
+                - button "Search" [ref=f1e877] [cursor=pointer]
+                - button "Fullscreen" [ref=f1e883] [cursor=pointer]
+              - group [ref=f1e897]:
+                - generic "keyboard_arrow_right 🔍 생성된 SQL 쿼리 보기" [ref=f1e898] [cursor=pointer]:
+                  - generic [ref=f1e899]:
+                    - generic [ref=f1e900]: keyboard_arrow_right
+                    - paragraph [ref=f1e904]: 🔍 생성된 SQL 쿼리 보기
+        - generic [ref=f1e906]:
+          - generic [ref=f1e907]: face
+          - generic "Chat message from user" [ref=f1e910]:
+            - paragraph [ref=f1e916]: 1월부터 6월까지 누적으로 영업이익이 제일 높은 품목이랑 이익률 알려줘
+        - generic [ref=f1e918]:
+          - generic [ref=f1e919]: smart_toy
+          - generic "Chat message from assistant" [ref=f1e922]:
+            - generic [ref=f1e923]:
+              - heading "💡 FP&A 분석 브리핑" [level=3] [ref=f1e1064]:
+                - text: 💡 FP&A 분석 브리핑
+                - generic [ref=f1e1065]:
+                  - link "Link to heading":
+                    - /url: "#fp-and-a"
+              - generic [ref=f1e944]:
+                - paragraph [ref=f1e1066]: 📌 핵심 결론 1월부터 6월까지 누적으로 영업이익이 가장 높은 품목은 "열연"이며, 총 영업이익은 167,879,000원으로, 이익률은 5.88%입니다.
+                - paragraph [ref=f1e1067]: 💡 손익 요인 분석 제공된 데이터에는 판가/원가 분해 정보가 없어 요인 분석이 제한적입니다.
+                - paragraph [ref=f1e1068]: ⚠️ 주의 필요 세그먼트 특이 적자 구간 없음
+              - paragraph [ref=f1e952]:
+                - text: 📋
+                - strong [ref=f1e1069]: 실적 집계 데이터
+              - generic [ref=f1e1073]:
+                - button "Show/hide columns" [ref=f1e1077] [cursor=pointer]
+                - button "Download as CSV" [ref=f1e1083] [cursor=pointer]
+                - button "Search" [ref=f1e1089] [cursor=pointer]
+                - button "Fullscreen" [ref=f1e1095] [cursor=pointer]
+              - group [ref=f1e1109]:
+                - generic "keyboard_arrow_right 🔍 생성된 SQL 쿼리 보기" [ref=f1e1110] [cursor=pointer]:
+                  - generic [ref=f1e1111]:
+                    - generic [ref=f1e1112]: keyboard_arrow_right
+                    - paragraph [ref=f1e1116]: 🔍 생성된 SQL 쿼리 보기
+              - group [ref=f1e1004]:
+                - generic "keyboard_arrow_right 🔍 생성된 SQL 쿼리 보기" [ref=f1e1045] [cursor=pointer]:
+                  - generic [ref=f1e1006]:
+                    - generic [ref=f1e1046]: keyboard_arrow_right
+                    - paragraph [ref=f1e1011]: 🔍 생성된 SQL 쿼리 보기
+        - generic [ref=f1e1118]:
+          - generic [ref=f1e1119]: face
+          - generic "Chat message from user" [ref=f1e1122]:
+            - paragraph [ref=f1e1128]: 1월부터 6월까지 누적으로 영업이익이 제일 높은 품목이랑 이익률 다시 알려줘
+        - generic [ref=f1e1130]:
+          - generic [ref=f1e1131]: smart_toy
+          - generic "Chat message from assistant" [ref=f1e1134]:
+            - group [ref=f1e1138]:
+              - paragraph [ref=f1e1145] [cursor=pointer]: 🧠 SQL 생성 중...
+      - generic [ref=f1e203]:
+        - 'textbox "질문을 입력하세요 (예: 3월 품목별 스프레드 및 손익 실적 요약해줘)" [active] [ref=f1e207]'
+        - button "Send message" [disabled] [ref=f1e209]

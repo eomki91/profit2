@@ -1,0 +1,3 @@
+[     215ms] [WARNING] VIDEOJS: WARN: videojs.plugin() is deprecated; use videojs.registerPlugin() instead @ https://www.hyundaimotorgroup.com/resources/assets/js/video.js:249
+[    1535ms] [LOG] adminHighlights : [] @ https://www.hyundaimotorgroup.com/resources/assets/js/ui.js?dt=20210428160010:3277
+[    2353ms] [LOG] GA Click Trigger Error! @ :3

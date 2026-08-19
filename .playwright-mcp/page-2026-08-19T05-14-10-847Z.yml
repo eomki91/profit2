@@ -1,0 +1,142 @@
+- generic [ref=f1e3]:
+  - banner [ref=f1e6]:
+    - generic [ref=f1e9]:
+      - generic [ref=f1e113]:
+        - img "Running..." [ref=f1e114]
+        - button "Stop" [ref=f1e119] [cursor=pointer]
+      - button "Deploy" [ref=f1e11] [cursor=pointer]
+      - button "Main menu" [ref=f1e15] [cursor=pointer]
+  - generic [ref=f1e19]:
+    - generic [ref=f1e24]:
+      - img "logo" [ref=f1e26]
+      - generic [ref=f1e27]:
+        - heading "현대제철 손익 분석 챗봇" [level=1] [ref=f1e29]:
+          - text: 현대제철 손익 분석 챗봇
+          - generic [ref=f1e30]:
+            - link "Link to heading":
+              - /url: "#1bcbec69"
+        - paragraph [ref=f1e31]: Hyundai-Steel Margin Copilot · 매출량 가중평균 기반 FP&A 분석
+    - generic [ref=f1e33]:
+      - generic [ref=f1e37]:
+        - generic [ref=f1e41]:
+          - 'textbox "질문을 입력하세요 (예: 3월 품목별 스프레드 및 손익 실적 요약해줘)" [active] [ref=f1e45]'
+          - button "Send message" [disabled] [ref=f1e47]
+        - generic [ref=f1e120]: 3월 품목별 스프레드 및 손익 실적 요약해줘
+        - group [ref=f1e128]:
+          - generic "check SQL 생성 완료" [ref=f1e129] [cursor=pointer]:
+            - generic [ref=f1e130]:
+              - generic [ref=f1e131]: check
+              - paragraph [ref=f1e135]: SQL 생성 완료
+        - generic [ref=f1e142]:
+          - heading "📌 핵심 결론" [level=2] [ref=f1e144]:
+            - text: 📌 핵심 결론
+            - generic [ref=f1e145]:
+              - link "Link to heading":
+                - /url: "#d1f1709f"
+          - paragraph [ref=f1e146]:
+            - text: 3월 영업이익 1위는
+            - strong [ref=f1e147]: 열연
+            - text: 으로
+            - strong [ref=f1e148]: 28,097,820,000원
+            - text: ", 2위 냉연보다"
+            - strong [ref=f1e149]: 4,792,580,000원(20.56%) 많았습니다
+            - text: . 평균 스프레드는
+            - strong [ref=f1e150]: 특수강이 466,000원으로 최고
+            - text: 였지만, 판매량이
+            - strong [ref=f1e151]: 51,470
+            - text: 에 그쳐 영업이익은
+            - strong [ref=f1e152]: 102,940,000원
+            - text: ", 영업이익률은 **0.17%**에 머물렀습니다."
+          - list [ref=f1e153]:
+            - listitem [ref=f1e154]:
+              - text: 영업이익 순위는 열연
+              - strong [ref=f1e155]: 28,097,820,000원
+              - text: ", 냉연"
+              - strong [ref=f1e156]: 23,305,240,000원
+              - text: ", H형강"
+              - strong [ref=f1e157]: 4,841,680,000원
+              - text: ", 특수강"
+              - strong [ref=f1e158]: 102,940,000원
+              - text: ", 철근"
+              - strong [ref=f1e159]: "-1,219,420,000원"
+              - text: ", 후판"
+              - strong [ref=f1e160]: "-3,965,650,000원"
+              - text: 순입니다.
+            - listitem [ref=f1e161]:
+              - text: 평균 스프레드는 특수강
+              - strong [ref=f1e162]: 466,000원
+              - text: ", 냉연"
+              - strong [ref=f1e163]: 353,316원
+              - text: ", H형강"
+              - strong [ref=f1e164]: 316,820원
+              - text: ", 열연"
+              - strong [ref=f1e165]: 269,152원
+              - text: ", 철근"
+              - strong [ref=f1e166]: 265,641원
+              - text: ", 후판"
+              - strong [ref=f1e167]: 259,263원
+              - text: 순입니다.
+            - listitem [ref=f1e168]:
+              - text: 특수강의 평균 스프레드는 후판보다
+              - strong [ref=f1e169]: 206,737원(79.74%) 높지만
+              - text: ", 영업이익은 후판보다"
+              - strong [ref=f1e170]: 4,068,590,000원 적습니다
+              - text: . 스프레드 수준만으로 전체 영업이익 규모가 결정되지는 않는다는 점이 확인됩니다.
+            - listitem [ref=f1e171]:
+              - text: 이번 조회는
+              - strong [ref=f1e172]: 2026년 3월 단일 월 기준
+              - text: 이므로 전월 대비 또는 전분기 대비 증감 비교는 포함하지 않았습니다.
+          - heading "💡 손익 요인 분석" [level=2] [ref=f1e174]:
+            - text: 💡 손익 요인 분석
+            - generic [ref=f1e175]:
+              - link "Link to heading":
+                - /url: "#428420f8"
+          - list [ref=f1e176]:
+            - listitem [ref=f1e177]: SQL 결과에는 평균 판매단가와 평균 스프레드가 함께 제시되어 있습니다. 평균 스프레드는 평균 판매단가에서 판매량 가중 평균 원재료비를 차감한 값입니다.
+            - listitem [ref=f1e178]:
+              - text: 3월 평균 판매단가는 특수강
+              - strong [ref=f1e179]: 1,168,000원
+              - text: ", 냉연"
+              - strong [ref=f1e180]: 1,059,616원
+              - text: ", 후판"
+              - strong [ref=f1e181]: 957,497원
+              - text: ", H형강"
+              - strong [ref=f1e182]: 919,180원
+              - text: ", 열연"
+              - strong [ref=f1e183]: 901,521원
+              - text: ", 철근"
+              - strong [ref=f1e184]: 816,281원
+              - text: 순입니다.
+            - listitem [ref=f1e185]:
+              - text: 평균 스프레드는 특수강이
+              - strong [ref=f1e186]: 466,000원
+              - text: 으로 가장 높고, 후판이
+              - strong [ref=f1e187]: 259,263원
+              - text: 으로 가장 낮아 두 품목 간 격차는
+              - strong [ref=f1e188]: 206,737원
+              - text: 입니다.
+            - listitem [ref=f1e189]:
+              - text: 다만 이번 결과에는 전월 또는 기준기간의 판매단가와 원재료비가 함께 제시되지 않았습니다. 따라서
+              - strong [ref=f1e190]: 판가 변동과 원가 변동 중 어느 요인이 스프레드 변화를 주도했는지
+      - generic [ref=f1e54]:
+        - heading "💡 추천 실무 분석 질문" [level=4] [ref=f1e60]:
+          - text: 💡 추천 실무 분석 질문
+          - generic [ref=f1e61]:
+            - link "Link to heading":
+              - /url: "#d73f0631"
+        - paragraph [ref=f1e66]: 클릭하면 바로 질의가 실행됩니다.
+        - button [ref=f1e69] [cursor=pointer]:
+          - paragraph [ref=f1e73]: 📅 월별 손익 요약
+        - button [ref=f1e76] [cursor=pointer]:
+          - paragraph [ref=f1e80]: 📉 MoM 스프레드 갭
+        - button [ref=f1e83] [cursor=pointer]:
+          - paragraph [ref=f1e87]: 🚗 자동차용 마진 현황
+        - button [ref=f1e90] [cursor=pointer]:
+          - paragraph [ref=f1e94]: 🏭 상반기 공장별 비교
+        - button [ref=f1e97] [cursor=pointer]:
+          - paragraph [ref=f1e101]: ⚠️ 적자 품목 탐색
+    - group [ref=f1e104]:
+      - generic "keyboard_arrow_right ⚙️ 시스템 설정 및 DB 상태" [ref=f1e105] [cursor=pointer]:
+        - generic [ref=f1e106]:
+          - generic [ref=f1e107]: keyboard_arrow_right
+          - paragraph [ref=f1e111]: ⚙️ 시스템 설정 및 DB 상태

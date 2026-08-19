@@ -1,0 +1,13 @@
+streamlit>=1.31
+duckdb
+pandas>=2.1
+openpyxl
+plotly
+python-dotenv
+langchain
+langchain-core
+langchain-community
+langchain-ollama
+langchain-openai
+faiss-cpu
+sentence-transformers

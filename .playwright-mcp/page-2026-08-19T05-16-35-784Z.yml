@@ -1,0 +1,51 @@
+- generic [ref=f2e3]:
+  - banner [ref=f2e6]:
+    - generic [ref=f2e9]:
+      - generic [ref=f2e113]:
+        - img "Running..." [ref=f2e114]
+        - button "Stop" [ref=f2e119] [cursor=pointer]
+      - button "Deploy" [ref=f2e11] [cursor=pointer]
+      - button "Main menu" [ref=f2e15] [cursor=pointer]
+  - generic [ref=f2e19]:
+    - generic [ref=f2e24]:
+      - img "logo" [ref=f2e26]
+      - generic [ref=f2e27]:
+        - heading "현대제철 손익 분석 챗봇" [level=1] [ref=f2e29]:
+          - text: 현대제철 손익 분석 챗봇
+          - generic [ref=f2e30]:
+            - link "Link to heading":
+              - /url: "#1bcbec69"
+        - paragraph [ref=f2e31]: Hyundai-Steel Margin Copilot · 매출량 가중평균 기반 FP&A 분석
+    - generic [ref=f2e33]:
+      - generic [ref=f2e37]:
+        - generic [ref=f2e41]:
+          - 'textbox "질문을 입력하세요 (예: 3월 품목별 스프레드 및 손익 실적 요약해줘)" [active] [ref=f2e45]'
+          - button "Send message" [disabled] [ref=f2e47]
+        - generic [ref=f2e120]: 3월 품목별 스프레드 및 손익 실적 요약해줘
+        - group [ref=f2e128]:
+          - generic "check SQL 생성 완료" [ref=f2e129] [cursor=pointer]:
+            - generic [ref=f2e130]:
+              - generic [ref=f2e131]: check
+              - paragraph [ref=f2e135]: SQL 생성 완료
+      - generic [ref=f2e54]:
+        - heading "💡 추천 실무 분석 질문" [level=4] [ref=f2e60]:
+          - text: 💡 추천 실무 분석 질문
+          - generic [ref=f2e61]:
+            - link "Link to heading":
+              - /url: "#d73f0631"
+        - paragraph [ref=f2e66]: 클릭하면 바로 질의가 실행됩니다.
+        - button [ref=f2e69] [cursor=pointer]:
+          - paragraph [ref=f2e73]: 📅 월별 손익 요약
+        - button [ref=f2e76] [cursor=pointer]:
+          - paragraph [ref=f2e80]: 📉 MoM 스프레드 갭
+        - button [ref=f2e83] [cursor=pointer]:
+          - paragraph [ref=f2e87]: 🚗 자동차용 마진 현황
+        - button [ref=f2e90] [cursor=pointer]:
+          - paragraph [ref=f2e94]: 🏭 상반기 공장별 비교
+        - button [ref=f2e97] [cursor=pointer]:
+          - paragraph [ref=f2e101]: ⚠️ 적자 품목 탐색
+    - group [ref=f2e104]:
+      - generic "keyboard_arrow_right ⚙️ 시스템 설정 및 DB 상태" [ref=f2e105] [cursor=pointer]:
+        - generic [ref=f2e106]:
+          - generic [ref=f2e107]: keyboard_arrow_right
+          - paragraph [ref=f2e111]: ⚙️ 시스템 설정 및 DB 상태

@@ -1,0 +1,76 @@
+- generic [ref=e2]:
+  - generic [ref=e11]:
+    - heading "📊 Hyundai-Steel Margin Copilot" [level=2] [ref=e16]
+    - paragraph [ref=e21]: 현대제철 손익 분석 챗봇
+    - separator [ref=e26]
+    - heading "🤖 LLM 엔진 설정" [level=3] [ref=e31]
+    - generic [ref=e33]:
+      - paragraph [ref=e37]: 사용할 LLM 엔진을 선택하세요
+      - radiogroup "사용할 LLM 엔진을 선택하세요" [ref=e38] [cursor=pointer]:
+        - generic [ref=e39]:
+          - radio "🏠 로컬 LLM (Ollama / qwen2.5-coder 또는 gemma2)" [checked]
+          - paragraph [ref=e44]: 🏠 로컬 LLM (Ollama / qwen2.5-coder 또는 gemma2)
+        - generic [ref=e45]:
+          - radio "🌐 OpenAI (ChatGPT / gpt-5.6-luna)"
+          - paragraph [ref=e50]: 🌐 OpenAI (ChatGPT / gpt-5.6-luna)
+    - generic [ref=e72]:
+      - generic [ref=e73]:
+        - paragraph [ref=e76]: Temperature
+        - button "Help for Temperature" [ref=e80] [cursor=pointer]
+      - generic [ref=e84]:
+        - slider "Temperature" [ref=e88]:
+          - generic:
+            - generic:
+              - paragraph: "0.00"
+        - generic:
+          - generic:
+            - paragraph: "0.00"
+          - generic:
+            - paragraph: "0.70"
+    - status [ref=e206]:
+      - paragraph [ref=e210]:
+        - strong [ref=e211]: 현재 활성 엔진
+        - text: ": 🟡 Local Ollama (qwen2.5-coder:7b)"
+    - separator [ref=e215]
+    - heading "🗄️ DB 상태" [level=3] [ref=e216]
+    - generic [ref=e218]:
+      - paragraph [ref=e221]: 총 레코드 수
+      - paragraph [ref=e224]: 288 건
+    - paragraph [ref=e228]: "분석 가능 기간: 2026-01 ~ 2026-12"
+    - separator [ref=e229]
+    - heading "💡 추천 질문" [level=3] [ref=e230]
+    - button [ref=e134] [cursor=pointer]:
+      - paragraph [ref=e138]: 3월 품목별 스프레드 및 손익 실적 요약해줘
+    - button [ref=e141] [cursor=pointer]:
+      - paragraph [ref=e145]: 5월 전월 대비 스프레드 최대 하락 품목은?
+    - button [ref=e148] [cursor=pointer]:
+      - paragraph [ref=e152]: 8월 자동차용(HMG/글로벌) 스프레드 현황 알려줘
+  - generic [ref=e3]:
+    - banner [ref=e155]:
+      - generic [ref=e158]:
+        - generic [ref=e232]:
+          - img "Running..." [ref=e233]
+          - button "Stop" [ref=e238] [cursor=pointer]
+        - button "Deploy" [ref=e160] [cursor=pointer]
+        - button "Main menu" [ref=e164] [cursor=pointer]
+    - generic [ref=e168]:
+      - generic [ref=e170]:
+        - heading "철강 손익 분석 챗봇" [level=1] [ref=e175]:
+          - text: 철강 손익 분석 챗봇
+          - generic [ref=e176]:
+            - link "Link to heading":
+              - /url: "#75197733"
+        - paragraph [ref=e181]: 단가/스프레드는 항상 매출량 가중평균으로 계산됩니다. LLM 엔진은 사이드바에서 로컬/OpenAI를 선택할 수 있습니다.
+        - generic [ref=e240]:
+          - generic [ref=e241]: face
+          - generic "Chat message from user" [ref=e244]:
+            - paragraph [ref=e250]: 월별 영업이익 적자가 난 품목과 해당 월 목록 뽑아줘
+        - generic [ref=e252]:
+          - generic [ref=e253]: smart_toy
+          - generic "Chat message from assistant" [ref=e256]:
+            - group [ref=e260]:
+              - paragraph [ref=e267] [cursor=pointer]: 🧠 SQL 생성 중...
+              - paragraph [ref=e275]: Few-Shot 임베딩 모델 및 벡터 인덱스 로딩 중...
+      - generic [ref=e190]:
+        - 'textbox "질문을 입력하세요 (예: 3월 품목별 스프레드 및 손익 실적 요약해줘)" [active] [ref=e194]'
+        - button "Send message" [disabled] [ref=e196]

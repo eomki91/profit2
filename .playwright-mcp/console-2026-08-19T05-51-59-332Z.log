@@ -1,0 +1,2 @@
+[       9ms] [ERROR] Failed to load resource: net::ERR_FILE_NOT_FOUND @ chrome-extension://ndbaejgcaecffnhlmdghchfehkflgfkj/manifest.webmanifest:0
+[     536ms] [ERROR] Unchecked runtime.lastError: The user is not signed in. @ chrome-extension://ndbaejgcaecffnhlmdghchfehkflgfkj/index.html:0

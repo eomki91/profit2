@@ -1,0 +1,2 @@
+[     230ms] [ERROR] Failed to load resource: net::ERR_FAILED @ chrome-extension://invalid/:0
+[     273ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://voilepassportal.com/get_is_c_exist?key=uid_cross:0
